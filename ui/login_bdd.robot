@@ -3,7 +3,6 @@
 Documentation    Esta suite testa o login do Einstein Conecta
 Resource         resources/Conecta_resources.robot
 Test Setup       Abrir o navegador
-#Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***

@@ -2,7 +2,7 @@
 
 Documentation  Realizar os cenario de login
 Resource        resources/resources.robot
-Test Setup     Dado que abri o emulador navegando ate a parte do login
+Test Setup      Dado que abri o emulador navegando ate a parte do login
 
 
 
