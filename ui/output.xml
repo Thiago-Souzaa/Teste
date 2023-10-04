@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20231003 17:27:54.219" rpa="false" schemaversion="3">
+<suite id="s1" name="Login Bdd" source="/Users/thiagosouza/Alura/mercado livre/ui/login_bdd.robot">
+<test id="s1-t1" name="Caso de teste 01 - Login_sucesso" line="11">
+<kw name="Abrir o navegador" library="Conecta_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231003 17:27:54.762" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20231003 17:27:59.354" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231003 17:27:59.355" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</msg>
+<status status="FAIL" starttime="20231003 17:27:54.762" endtime="20231003 17:27:59.363"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231003 17:27:59.364" endtime="20231003 17:27:59.364"/>
+</kw>
+<status status="FAIL" starttime="20231003 17:27:54.761" endtime="20231003 17:27:59.364"/>
+</kw>
+<doc>Este teste verifica o login com sucesso</doc>
+<tag>login_sucesso</tag>
+<status status="FAIL" starttime="20231003 17:27:54.760" endtime="20231003 17:27:59.365">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02 - Login_email_invalido" line="21">
+<kw name="Abrir o navegador" library="Conecta_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231003 17:27:59.367" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20231003 17:28:02.119" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231003 17:28:02.120" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</msg>
+<status status="FAIL" starttime="20231003 17:27:59.367" endtime="20231003 17:28:02.120"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231003 17:28:02.121" endtime="20231003 17:28:02.121"/>
+</kw>
+<status status="FAIL" starttime="20231003 17:27:59.367" endtime="20231003 17:28:02.122"/>
+</kw>
+<doc>Este teste verifica CPF inválido</doc>
+<tag>login_email_invalido</tag>
+<status status="FAIL" starttime="20231003 17:27:59.366" endtime="20231003 17:28:02.123">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</status>
+</test>
+<test id="s1-t3" name="Caso de teste 03 - Login_senha_invalida" line="30">
+<kw name="Abrir o navegador" library="Conecta_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231003 17:28:02.126" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20231003 17:28:04.780" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231003 17:28:04.780" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</msg>
+<status status="FAIL" starttime="20231003 17:28:02.125" endtime="20231003 17:28:04.781"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231003 17:28:04.781" endtime="20231003 17:28:04.781"/>
+</kw>
+<status status="FAIL" starttime="20231003 17:28:02.125" endtime="20231003 17:28:04.782"/>
+</kw>
+<doc>Este teste verifica uma senha inválida</doc>
+<tag>login_senha_invalida</tag>
+<status status="FAIL" starttime="20231003 17:28:02.124" endtime="20231003 17:28:04.783">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 117.0.5938.132 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+</status>
+</test>
+<doc>Esta suite testa o login do Einstein Conecta</doc>
+<status status="FAIL" starttime="20231003 17:27:54.221" endtime="20231003 17:28:04.784"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login_email_invalido</stat>
+<stat pass="0" fail="1" skip="0">login_senha_invalida</stat>
+<stat pass="0" fail="1" skip="0">login_sucesso</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Login Bdd">Login Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

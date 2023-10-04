@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20230727 21:33:15.324" rpa="false" schemaversion="3">
+<suite id="s1" name="Login Bdd" source="/Users/thiagosouza/Treinamento_robot/QA_TEAM/PortalPaciente/MinhaConta/mobile/login_bdd.robot">
+<test id="s1-t1" name="Caso de teste 01- Login com CPF correto e senha correta" line="10">
+<kw name="Dado que abri o emulador navegando ate a parte do login" library="Login" type="SETUP">
+<kw name="Abrir App" library="resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Pixel_5x</arg>
+<arg>app=${EXECDIR}/app/v2.2.5-releaseQAS.apk</arg>
+<arg>udid=emulator-5554</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230727 21:33:15.963" endtime="20230727 21:33:41.135"/>
+</kw>
+<status status="PASS" starttime="20230727 21:33:15.963" endtime="20230727 21:33:41.137"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:33:41.138" endtime="20230727 21:33:44.449"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:33:44.451" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:33:44.450" endtime="20230727 21:33:44.705"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230727 21:33:47.499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230727 21:33:46.762" endtime="20230727 21:33:47.499"/>
+</kw>
+<msg timestamp="20230727 21:33:47.501" level="FAIL">StaleElementReferenceException: Message: Cached elements 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]' do not exist in DOM anymore
+</msg>
+<status status="FAIL" starttime="20230727 21:33:44.705" endtime="20230727 21:33:47.513"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230727 21:33:47.514" endtime="20230727 21:33:47.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230727 21:33:47.514" endtime="20230727 21:33:47.514"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230727 21:33:47.514" endtime="20230727 21:33:47.515"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230727 21:33:47.515" endtime="20230727 21:33:47.515"/>
+</kw>
+<status status="FAIL" starttime="20230727 21:33:15.962" endtime="20230727 21:33:47.516"/>
+</kw>
+<tag>login</tag>
+<tag>regressivo</tag>
+<status status="FAIL" starttime="20230727 21:33:15.961" endtime="20230727 21:33:47.517">Setup failed:
+StaleElementReferenceException: Message: Cached elements 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]' do not exist in DOM anymore
+</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02- Login com Passaporte correto e senha correta" line="16">
+<kw name="Dado que abri o emulador navegando ate a parte do login" library="Login" type="SETUP">
+<kw name="Abrir App" library="resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Pixel_5x</arg>
+<arg>app=${EXECDIR}/app/v2.2.5-releaseQAS.apk</arg>
+<arg>udid=emulator-5554</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230727 21:33:47.520" endtime="20230727 21:34:03.796"/>
+</kw>
+<status status="PASS" starttime="20230727 21:33:47.520" endtime="20230727 21:34:03.796"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:34:03.796" endtime="20230727 21:34:07.631"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:07.633" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:34:07.631" endtime="20230727 21:34:07.887"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:34:07.887" endtime="20230727 21:34:09.954"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:09.956" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]'.</msg>
+<status status="PASS" starttime="20230727 21:34:09.954" endtime="20230727 21:34:10.150"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 21:34:12.151" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 21:34:10.150" endtime="20230727 21:34:12.151"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:34:12.152" endtime="20230727 21:34:12.357"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:12.359" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:34:12.357" endtime="20230727 21:34:12.565"/>
+</kw>
+<status status="PASS" starttime="20230727 21:33:47.519" endtime="20230727 21:34:12.565"/>
+</kw>
+<kw name="Quando preencher o campo documento usando Passaporte correto" library="Login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:34:12.566" endtime="20230727 21:34:14.461"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>NC011231</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:14.463" level="INFO">Typing text 'NC011231' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText'</msg>
+<status status="PASS" starttime="20230727 21:34:14.461" endtime="20230727 21:34:15.017"/>
+</kw>
+<status status="PASS" starttime="20230727 21:34:12.566" endtime="20230727 21:34:15.017"/>
+</kw>
+<kw name="E colocar a senha correta" library="Login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:34:15.018" endtime="20230727 21:34:16.228"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText</arg>
+<arg>Hiae@123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:16.231" level="INFO">Typing text 'Hiae@123' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20230727 21:34:16.228" endtime="20230727 21:34:16.491"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:16.495" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:34:16.492" endtime="20230727 21:34:17.947"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[7]/android.view.ViewGroup</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:34:17.949" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[7]/android.view.ViewGroup'.</msg>
+<status status="PASS" starttime="20230727 21:34:17.948" endtime="20230727 21:34:18.805"/>
+</kw>
+<status status="PASS" starttime="20230727 21:34:15.018" endtime="20230727 21:34:18.806"/>
+</kw>
+<kw name="Entao usuario entrara na home" library="Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 21:34:20.809" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 21:34:18.807" endtime="20230727 21:34:20.809"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup</arg>
+<arg>40</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230727 21:35:01.405" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2148"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+        &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/launcher" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/drag_layer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+            &lt;android.view.View index="0" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" resource-id="com.google.android.apps.nexuslauncher:id/scrim_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true" /&gt;
+            &lt;android.widget.RelativeLayout index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.RelativeLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/apps_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2148]" displayed="true"&gt;
+              &lt;android.widget.LinearLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.LinearLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/search_container_all_apps" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,111][1080,284]" displayed="true"&gt;
+                &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[37,141][1043,284]" displayed="true"&gt;
+                  &lt;android.widget.TextView index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="" resource-id="com.google.android.apps.nexuslauncher:id/hint" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[37,141][1043,284]" displayed="true" /&gt;
+                  &lt;android.widget.EditText index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.EditText" text="Search your phone and more" resource-id="com.google.android.apps.nexuslauncher:id/input" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[37,141][1043,284]" displayed="true" /&gt;
+                  &lt;android.widget.ImageButton index="2" package="com.google.android.apps.nexuslauncher" class="android.widget.ImageButton" text="" content-desc="Preferences" resource-id="com.google.android.apps.nexuslauncher:id/action_btn" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[900,141][1043,284]" displayed="true" /&gt;
+                &lt;/android.widget.FrameLayout&gt;
+              &lt;/android.widget.LinearLayout&gt;
+              &lt;androidx.recyclerview.widget.RecyclerView index="1" package="com.google.android.apps.nexuslauncher" class="androidx.recyclerview.widget.RecyclerView" text="" resource-id="com.google.android.apps.nexuslauncher:id/apps_list_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,201][1080,2148]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Appium Settings" content-desc="Appium Settings" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[37,303][238,613]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Calendar" content-desc="Calendar" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[238,303][440,613]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="2" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Camera" content-desc="Camera" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[440,303][641,613]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="3" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Chrome" content-desc="Chrome" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[641,303][842,613]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="4" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Clock" content-desc="Clock" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[842,303][1043,613]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="5" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Contacts" content-desc="Contacts" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[37,613][238,923]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="6" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Drive" content-desc="Drive" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[238,613][440,923]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="7" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Files" content-desc="Files" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[440,613][641,923]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="8" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Gmail" content-desc="Gmail" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[641,613][842,923]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="9" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Google" content-desc="Google" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[842,613][1043,923]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="10" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Maps" content-desc="Maps" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[37,923][238,1233]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="11" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Messages" content-desc="Messages" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[238,923][440,1233]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="12" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Phone" content-desc="Phone" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[440,923][641,1233]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="13" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Photos" content-desc="Photos" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[641,923][842,1233]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="14" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="QAS - Conecta" content-desc="QAS - Conecta" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[842,923][1043,1233]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="15" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Settings" content-desc="Settings" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[37,1233][238,1543]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="16" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="TMoble" content-desc="TMoble" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[238,1233][440,1543]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="17" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="YouTube" content-desc="YouTube" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[440,1233][641,1543]" displayed="true" /&gt;
+                &lt;android.widget.TextView index="18" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="YT Music" content-desc="YT Music" resource-id="com.google.android.apps.nexuslauncher:id/icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[641,1233][842,1543]" displayed="true" /&gt;
+              &lt;/androidx.recyclerview.widget.RecyclerView&gt;
+              &lt;android.widget.LinearLayout index="2" package="com.google.android.apps.nexuslauncher" class="android.widget.LinearLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/all_apps_header" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,201][1080,317]" displayed="true" /&gt;
+              &lt;android.view.View index="4" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" resource-id="com.google.android.apps.nexuslauncher:id/fast_scroller" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[992,201][1080,2148]" displayed="true" /&gt;
+            &lt;/android.widget.RelativeLayout&gt;
+            &lt;android.view.View index="3" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" content-desc="Home" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,83][1080,2148]" displayed="true" /&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.FrameLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230727 21:35:02.478" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230727 21:35:01.408" endtime="20230727 21:35:02.479"/>
+</kw>
+<msg timestamp="20230727 21:35:02.479" level="FAIL">Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup' did not match any elements after 40 seconds</msg>
+<status status="FAIL" starttime="20230727 21:34:20.810" endtime="20230727 21:35:02.479"/>
+</kw>
+<kw name="Fechar App" library="resources">
+<status status="NOT RUN" starttime="20230727 21:35:02.480" endtime="20230727 21:35:02.480"/>
+</kw>
+<status status="FAIL" starttime="20230727 21:34:18.806" endtime="20230727 21:35:02.480"/>
+</kw>
+<tag>login</tag>
+<tag>regressivo</tag>
+<status status="FAIL" starttime="20230727 21:33:47.518" endtime="20230727 21:35:02.481">Element locator 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup' did not match any elements after 40 seconds</status>
+</test>
+<test id="s1-t3" name="Caso de Teste 03- Login com CPF correto e senha incorreta" line="22">
+<kw name="Dado que abri o emulador navegando ate a parte do login" library="Login" type="SETUP">
+<kw name="Abrir App" library="resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Pixel_5x</arg>
+<arg>app=${EXECDIR}/app/v2.2.5-releaseQAS.apk</arg>
+<arg>udid=emulator-5554</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230727 21:35:02.482" endtime="20230727 21:35:12.463"/>
+</kw>
+<status status="PASS" starttime="20230727 21:35:02.482" endtime="20230727 21:35:12.463"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:35:12.464" endtime="20230727 21:35:15.531"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:15.533" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:35:15.532" endtime="20230727 21:35:15.667"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:35:15.667" endtime="20230727 21:35:17.760"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:17.763" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]'.</msg>
+<status status="PASS" starttime="20230727 21:35:17.760" endtime="20230727 21:35:17.974"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 21:35:19.976" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 21:35:17.975" endtime="20230727 21:35:19.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:35:19.976" endtime="20230727 21:35:20.079"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:20.080" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:35:20.079" endtime="20230727 21:35:20.222"/>
+</kw>
+<status status="PASS" starttime="20230727 21:35:02.482" endtime="20230727 21:35:20.222"/>
+</kw>
+<kw name="Quando preencher o campo documento usando CPF correto" library="Login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:35:20.223" endtime="20230727 21:35:21.425"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText</arg>
+<arg>25973249239</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:21.427" level="INFO">Typing text '25973249239' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText'</msg>
+<status status="PASS" starttime="20230727 21:35:21.426" endtime="20230727 21:35:21.571"/>
+</kw>
+<status status="PASS" starttime="20230727 21:35:20.223" endtime="20230727 21:35:21.571"/>
+</kw>
+<kw name="E colocar a senha incorreta" library="Login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230727 21:35:21.572" endtime="20230727 21:35:22.561"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText</arg>
+<arg>Teste@123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:22.563" level="INFO">Typing text 'Teste@123' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20230727 21:35:22.561" endtime="20230727 21:35:22.685"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:22.687" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20230727 21:35:22.686" endtime="20230727 21:35:23.748"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[7]/android.view.ViewGroup</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230727 21:35:23.750" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[7]/android.view.ViewGroup'.</msg>
+<status status="PASS" starttime="20230727 21:35:23.748" endtime="20230727 21:35:24.465"/>
+</kw>
+<status status="PASS" starttime="20230727 21:35:21.572" endtime="20230727 21:35:24.466"/>
+</kw>
+<kw name="Entao devera informar que o documento ou a senha esta incorreto" library="Login">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230727 21:35:26.468" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230727 21:35:24.467" endtime="20230727 21:35:26.468"/>
+</kw>
+<kw name="Fechar App" library="resources">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" starttime="20230727 21:35:28.374" endtime="20230727 21:35:28.374"/>
+</kw>
+<msg timestamp="20230727 21:35:28.377" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20230727 21:35:26.469" endtime="20230727 21:35:28.377"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20230727 21:35:28.378" endtime="20230727 21:35:28.378"/>
+</kw>
+<status status="FAIL" starttime="20230727 21:35:26.469" endtime="20230727 21:35:28.379"/>
+</kw>
+<status status="FAIL" starttime="20230727 21:35:24.466" endtime="20230727 21:35:28.379"/>
+</kw>
+<tag>login</tag>
+<status status="FAIL" starttime="20230727 21:35:02.481" endtime="20230727 21:35:28.380">Execution terminated by signal</status>
+</test>
+<test id="s1-t4" name="Caso de Teste 04- Login com Passaporte correto e senha incorreto" line="28">
+<tag>login</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.380" endtime="20230727 21:35:28.382">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Caso de Teste 05- Login com CPF incorreto e senha correta" line="34">
+<tag>login</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.383" endtime="20230727 21:35:28.384">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="Caso de Teste 06- Login com Passaporte incorreto e senha correta" line="40">
+<tag>login</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.385" endtime="20230727 21:35:28.387">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="Caso de Teste 07- Login com CPF incorreto e senha incorreta" line="46">
+<tag>login</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.388" endtime="20230727 21:35:28.390">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="Caso de Teste 08- Login com Passaporte incorreto e senha incorreta" line="52">
+<tag>login</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.391" endtime="20230727 21:35:28.393">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="Caso de Teste 09- Usuario com CPF esqueceu a senha" line="58">
+<tag>esqueceu_senha</tag>
+<tag>regressivo</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.393" endtime="20230727 21:35:28.395">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="Caso de Teste 10- Usuario com Passaporte esqueceu a senha" line="65">
+<tag>esqueceu_senha</tag>
+<tag>regressivo</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.395" endtime="20230727 21:35:28.396">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="Caso de Teste 11- Usuario com Email esqueceu a senha" line="72">
+<tag>esqueceu_senha</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.397" endtime="20230727 21:35:28.398">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t12" name="Caso de Teste 12- Usuario escolhe preencher formulario como forma de contato ao suporte, preenchendo todos os campos" line="79">
+<tag>contato_suporte</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.399" endtime="20230727 21:35:28.400">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t13" name="Caso de Teste 13- Usuario escolhe WhatsApp como forma de contato ao suporte" line="86">
+<tag>contato_suporte</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.400" endtime="20230727 21:35:28.402">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t14" name="Caso de Teste 14- Usuario escolhe telefone como forma de contato ao suporte" line="93">
+<tag>contato_suporte</tag>
+<tag>regressivo</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20230727 21:35:28.403" endtime="20230727 21:35:28.404">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Realizar os cenario de login</doc>
+<status status="FAIL" starttime="20230727 21:33:15.327" endtime="20230727 21:35:28.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="14" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="3" skip="0">contato_suporte</stat>
+<stat pass="0" fail="3" skip="0">esqueceu_senha</stat>
+<stat pass="0" fail="8" skip="0">login</stat>
+<stat pass="0" fail="5" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat pass="0" fail="14" skip="0" id="s1" name="Login Bdd">Login Bdd</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230727 21:35:28.377" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>
